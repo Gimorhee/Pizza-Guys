@@ -38,6 +38,27 @@ app.use(express.static("public"));
 // Mount all resource routes
 app.use("/api/users", usersRoutes(knex));
 
+//creates route to admin
+app.get("/admin", (req, res) => {
+  res.render("admin");
+});
+// creates route to status page
+app.get("/status", (req, res) => {
+  res.render("status");
+});
+// creates route to checkout page
+app.get("/checkout", (req, res) => {
+  res.render("checkout");
+});
+
+app.post("/checkout", (req, res) => {
+  res.redirect("/checkout");
+})
+
+app.post("/status", (req, res) => {
+  res.redirect("/status");
+})
+
 // Home page
 app.get("/", (req, res) => {
   res.render("index");
