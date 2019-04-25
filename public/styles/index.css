@@ -1,0 +1,32 @@
+.navbar {
+ color: gold;
+ margin-top: 25px;
+ background-color:  #800000;
+ font-style: oblique;
+
+
+
+}
+
+
+#checkout_cart{
+border-style: solid;
+background-color: #E2E6E4;
+border-width: 1px;
+
+}
+
+
+.place_order_button {
+  float: right;
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 4px;
+  border-color: black;
+  margin: 10px;
+  background-color:#800000;
+  color:gold;
+  text-align: center;
+
+}
+
