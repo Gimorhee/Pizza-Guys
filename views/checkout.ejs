@@ -16,6 +16,7 @@
   <body class="testing">
 
 <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+  <img class="logo" src="/images/logo.png">
   <a class="navbar-brand" href="#">Pizza Guys</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -31,10 +32,16 @@
 
 <main role="main" class="container">
   <div class="jumbotron">
-    <h1>This is your order summary please enter your phone number to confirm order</h1>
-    <p class="lead">This example is a quick exercise to illustrate how the top-aligned navbar works. As you scroll, this navbar remains in its original position and moves with the rest of the page.</p>
+    <h1>Order Summary:</h1>
+    <p class="lead">
+      <ul>
+        <li>Items: </li>
+        <li>Price: </li>
+        <li>Description: </li>
+      </ul>
+    </p>
     <form class="form-inline mt-2 mt-md-0" method="POST" action="/status">
-      <input class="form-control mr-sm-2" type="text" placeholder="Enter phone number">
+      <input class="form-control mr-sm-2" type="text" placeholder="Enter phone number" name="phonenumber">
       <a><button type= "submit" class="btn btn-dark"> Confirm Order </button></a>
     </form>
   </div>

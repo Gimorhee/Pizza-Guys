@@ -56,6 +56,7 @@ app.post("/checkout", (req, res) => {
 })
 
 app.post("/status", (req, res) => {
+  // let phonenumber = req.body.phonenumber;
   res.redirect("/status");
 })
 
