@@ -14,6 +14,9 @@ const knex        = require("knex")(knexConfig[ENV]);
 const morgan      = require('morgan');
 const knexLogger  = require('knex-logger');
 
+const sendMsg = require('./twilioAPI/twilio.js');
+const sendMsgAdmin = require('./twilioAPI/twilio_admin.js');
+
 // Seperated Routes for each Resource
 const usersRoutes = require("./routes/users");
 
@@ -42,22 +45,30 @@ app.use("/api/users", usersRoutes(knex));
 app.get("/admin", (req, res) => {
   res.render("admin");
 });
+
 // creates route to status page
 app.get("/status", (req, res) => {
   res.render("status");
 });
+
 // creates route to checkout page
 app.get("/checkout", (req, res) => {
   res.render("checkout");
 });
 
+// post req. to checkout. when user clicks place order button.
 app.post("/checkout", (req, res) => {
   res.redirect("/checkout");
-})
+});
 
+// post req. to status. when user confirms his/her order.
 app.post("/status", (req, res) => {
+  // send text msg to the customer that the order is placed.
+  sendMsg();
+  // send text msg to restaurant owner that the order is placed.
+  sendMsgAdmin();
   res.redirect("/status");
-})
+});
 
 // Home page
 app.get("/", (req, res) => {
