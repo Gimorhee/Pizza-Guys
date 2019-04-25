@@ -14,7 +14,7 @@ const sendMsgAdmin = function(phone_number){
   .create({
      body: 'The order is placed. Please go to /admin and input wait time',
      from: '+15879057052',
-     to: process.env.TO_PHONE_NUMBER
+     to: process.env.TO_ADMIN_PHONE_NUM
    })
   .then(message => console.log(message.sid));
 
