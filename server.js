@@ -46,6 +46,12 @@ app.get("/admin", (req, res) => {
   res.render("admin");
 });
 
+//the restaurant owner puts in wait_time
+app.post("/orders", (req, res) => {
+
+  res.redirect("/admin");
+})
+
 // creates route to status page
 app.get("/status", (req, res) => {
   res.render("status");
