@@ -58,7 +58,15 @@ app.get("/checkout", (req, res) => {
 
 // post req. to checkout. when user clicks place order button.
 app.post("/checkout", (req, res) => {
-  res.redirect("/checkout");
+  // console.log(req.body);
+  console.log(req.body.id);
+  let templateVars = {
+    pizza: req.body.id,
+    size: req.body.size,
+    qty: req.body.qty,
+    total_price: req.body.total
+  }
+  res.render("checkout", templateVars);
 });
 
 // post req. to status. when user confirms his/her order.

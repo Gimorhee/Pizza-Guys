@@ -23,11 +23,19 @@ $(() => {
     }
 
     $("#selectedItems").append(`<li> ${formId.charAt(0).toUpperCase()}${formId.slice(1)} Pizza - Size: ${size}, Qty: ${qty}, Price: $<span class="price">${price}</span>`);
+
+    total += price;
+
+    $('#cart').append(`<input type="hidden" name="id[]" value="${formId}">`);
+    $('#cart').append(`<input type="hidden" name="size[]" value="${size}">`);
+    $('#cart').append(`<input type="hidden" name="qty[]" value="${qty}">`);
+    $('#cart').append(`<input type="hidden" name="total[]" value="${total}">`);
     // console.log(typeof $(".price").text());
-    total += price
-    console.log(total);
+
     // console.log(total);
-    $(".total_price").text(`The total is ${total}.`);
+    // console.log(total);
+    $(".total_price").text(`The total is $${total}.`);
+
 
       // console.log($(".price").text());
   });

@@ -40,8 +40,11 @@
     <h1>Order Summary:</h1>
     <p class="lead">
       <ul>
-        <li>Items: </li>
-        <li>Price: </li>
+        <% for (let key in pizza) { %>
+        <li><%= qty[key] %> <%= pizza[key] %> Pizza (<%=size[key]%>) - $<%=total_price[key]%></li>
+
+        <% }; %>
+        <p> Total Price (tax included): $<%= (total_price[total_price.length-1] * 1.12).toFixed(2)%></p>
       </ul>
     </p>
     <form class="form-inline mt-2 mt-md-0" method="POST" action="/status">
