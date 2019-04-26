@@ -2,9 +2,6 @@
  color: gold;
  background-color:  #800000;
  font-style: oblique;
-
-
-
 }
 
 
@@ -12,7 +9,6 @@
 border-style: solid;
 background-color: #E2E6E4;
 border-width: 1px;
-
 }
 
 
@@ -26,12 +22,11 @@ border-width: 1px;
   background-color:#800000;
   color:gold;
   text-align: center;
-
 }
 
 .piz_pic {
+  object-fit: cover;
   width: 348px;
   height: 225px;
-
 }
 
