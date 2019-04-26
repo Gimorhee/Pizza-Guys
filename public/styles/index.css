@@ -30,8 +30,10 @@ border-width: 1px;
 }
 
 .piz_pic {
+  object-fit: cover;
   width: 348px;
   height: 225px;
+
 
 }
 
