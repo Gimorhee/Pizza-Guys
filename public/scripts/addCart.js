@@ -2,6 +2,7 @@ $(() => {
   let data = [];
   $(".cart_button").click((event) => {
     let price = 0;
+    let total = [];
 
     event.preventDefault();
 
