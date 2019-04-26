@@ -1,6 +1,5 @@
 .navbar {
  color: gold;
- margin-top: 25px;
  background-color:  #800000;
  font-style: oblique;
 
@@ -27,6 +26,12 @@ border-width: 1px;
   background-color:#800000;
   color:gold;
   text-align: center;
+
+}
+
+.piz_pic {
+  width: 348px;
+  height: 225px;
 
 }
 
