@@ -22,10 +22,10 @@ $(() => {
       price += (30 * qty);
     }
 
-    $("#selectedItems").append(`<li> ${formId.charAt(0).toUpperCase()}${formId.slice(1)} Pizza - Size: ${size}, Qty: ${qty}, Price: $<span class="price">${price}</span>`);
+    $("#selectedItems").append(`<li> ${formId.charAt(0).toUpperCase()}${formId.slice(1)} Pizza - Size: ${size}, Qty: ${qty}, Price: ${price}</span>`);
 
     total += price;
-
+    console.log(formId);
     $('#cart').append(`<input type="hidden" name="id[]" value="${formId}">`);
     $('#cart').append(`<input type="hidden" name="size[]" value="${size}">`);
     $('#cart').append(`<input type="hidden" name="qty[]" value="${qty}">`);
@@ -35,6 +35,7 @@ $(() => {
     // console.log(total);
     // console.log(total);
     $(".total_price").text(`The total is $${total}.`);
+
 
 
       // console.log($(".price").text());

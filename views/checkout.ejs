@@ -11,6 +11,7 @@
 
     <script type="text/javascript" src="/vendor/jquery-3.0.0.js"></script>
     <script type="text/javascript" src="/scripts/app.js"></script>
+    <script type="text/javascript" src="/scripts/confirmOrder.js"></script>
   </head>
 
 <body>
@@ -45,11 +46,12 @@
 
         <% }; %>
         <p> Total Price (tax included): $<%= (total_price[total_price.length-1] * 1.12).toFixed(2)%></p>
+
       </ul>
     </p>
     <form class="form-inline mt-2 mt-md-0" method="POST" action="/status">
       <input class="form-control mr-sm-2" type="text" placeholder="Enter phone number" name="phonenumber">
-      <a><button type= "submit" class="btn btn-dark"> Confirm Order </button></a>
+      <a><button type= "submit" class="btn btn-dark confirm_order"> Confirm Order </button></a>
     </form>
   </div>
 </main>

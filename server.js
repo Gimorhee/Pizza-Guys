@@ -58,25 +58,43 @@ app.get("/checkout", (req, res) => {
 
 // post req. to checkout. when user clicks place order button.
 app.post("/checkout", (req, res) => {
-  // console.log(req.body);
-  console.log(req.body.id);
   let templateVars = {
     pizza: req.body.id,
     size: req.body.size,
     qty: req.body.qty,
     total_price: req.body.total
   }
+  // console.log(req.body.id);
+  //loop
+  for (let i =0; i < req.body.id.length; i++) {
+
+    knex('data').insert({pizza_name: req.body.id[i], size: req.body.size[i], qty: Number(req.body.qty[i]), total_price: Number(req.body.total[i])}).asCallback( (err, result) => {
+      console.log(err);
+      console.log(result);
+      console.log("inserted");
+
+    })
+  }
   res.render("checkout", templateVars);
 });
 
 // post req. to status. when user confirms his/her order.
 app.post("/status", (req, res) => {
+  // let templateVars = {
+  //   pizza: req.body.id,
+  //   size: req.body.size,
+  //   qty: req.body.qty,
+  //   total_price: req.body.total
+  // }
+  // console.log(req.body);
+  // console.log(templateVars);
   // send text msg to the customer that the order is placed.
-  sendMsg();
+  // sendMsg();
   // send text msg to restaurant owner that the order is placed.
-  sendMsgAdmin();
-  res.redirect("/status");
+  // sendMsgAdmin();
+  res.render("status");
 });
+
 
 // Home page
 app.get("/", (req, res) => {
