@@ -29,11 +29,6 @@
         <div class="checkout_phone">Phone Number: 778 123 4656</div>
       </a>
 </header>
-
-
-
-
-
 <main role="main" class="order_container">
   <div class="jumbotron">
     <h4><strong><i>New order! Please confirm below</i></strong></h4>
@@ -52,7 +47,7 @@
         Total : $<%=(total * 1.12).toFixed(2);%>
       </p>
     </p>
-    <form class="form-inline mt-2 mt-md-0" method="POST" action="/status">
+    <form class="form-inline mt-2 mt-md-0" method="POST" action="/admin">
       <input class="form-control mr-sm-2" type="text" placeholder="Enter order ready time" name="readytime">
       <a><button type= "submit" class="btn btn-dark"> Confirm Order & Notify Customer </button></a>
     </form>
