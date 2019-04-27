@@ -4,13 +4,11 @@
  font-style: oblique;
 }
 
-
 #checkout_cart{
 border-style: solid;
 background-color: #E2E6E4;
 border-width: 1px;
 }
-
 
 .place_order_button {
   float: right;
@@ -55,6 +53,14 @@ p.attribute {
   display: inline-block;
   margin: 10px 20px 5px 20px;
   font-weight: 900;
+}
+
+p.attribute:hover{
+  color:gold;
+  display: inline-block;
+  margin: 10px 20px 5px 20px;
+  font-weight: 900;
+  font-size: 20px;
 }
 
 div.footer_attributes {
