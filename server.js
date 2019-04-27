@@ -43,7 +43,8 @@ app.use("/api/users", usersRoutes(knex));
 
 //creates route to admin
 app.get("/admin", (req, res) => {
-  res.render("admin");
+  knex.select('pizza_name', 'size', 'qty', 'total_price').from('data').then(data =>res.render('admin',
+    {data:data}))
 });
 
 // creates route to status page
@@ -64,14 +65,13 @@ app.post("/checkout", (req, res) => {
     qty: req.body.qty,
     total_price: req.body.total
   }
-  // console.log(req.body.id);
+
   //loop
+  knex('data').del().asCallback( (err) => {console.log(err)});
   for (let i =0; i < req.body.id.length; i++) {
 
     knex('data').insert({pizza_name: req.body.id[i], size: req.body.size[i], qty: Number(req.body.qty[i]), total_price: Number(req.body.total[i])}).asCallback( (err, result) => {
       console.log(err);
-      console.log(result);
-      console.log("inserted");
 
     })
   }

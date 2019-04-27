@@ -41,8 +41,17 @@
     <h5>Order Summary:</h>
     <p class="lead">
       <ul>
-
+        <% for (let i = 0; i < data.length; i++) { %>
+        <li> Pizza: <%= data[i].pizza_name.charAt(0).toUpperCase() + data[i].pizza_name.slice(1).toLowerCase() %>, Size: <%= data[i].size.charAt(0).toUpperCase() %>, Qty: <%= data[i].qty %>, Price: $<%= data[i].total_price %></li>
+      <% }; %>
       </ul>
+      <p>
+        <% let total = 0; %>
+        <% for (let i = 0 ; i < data.length ; i ++) { %>
+          <% total += data[i].total_price; %>
+        <% }; %>
+        Total : $<%=(total * 1.12).toFixed(2);%>
+      </p>
     </p>
     <form class="form-inline mt-2 mt-md-0" method="POST" action="/status">
       <input class="form-control mr-sm-2" type="text" placeholder="Enter order ready time" name="readytime">
