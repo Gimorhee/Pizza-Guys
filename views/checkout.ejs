@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <title>checkout</title>
-
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
     <link rel="stylesheet" href="/vendor/border-box.css" type="text/css" />
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
@@ -13,44 +12,40 @@
     <script type="text/javascript" src="/scripts/app.js"></script>
     <script type="text/javascript" src="/scripts/confirmOrder.js"></script>
   </head>
-
-<body>
-
- <header>
-  <div class="collapse bg-dark" id="navbarHeader">
-    <div class="container">
+  <body>
+    <header>
+      <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+        </div>
       </div>
     </div>
-  </div>
-  <div class="navbar">
-    <div class="container d-flex justify-content-between">
-         <strong><font size= "20px">Pizza Guys</font></strong>
-         <img class="logo" src="/images/logo.png">
-         <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+    <div class="navbar">
+      <div class="container d-flex justify-content-between">
+        <strong><font size= "20px">Pizza Guys</font></strong>
+        <img class="logo" src="/images/logo.png">
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
         <div class ="checkout_add">Address: 234 West 4th ave, Vancouver BC</div>
         <div class="checkout_phone">Phone Number: 778 123 4656</div>
       </a>
-</header>
-<main role="main" class="order_container">
-  <div class="jumbotron">
-    <h1>Order Summary:</h1>
-    <p class="lead">
-      <ul>
-        <% for (let key in pizza) { %>
-        <li><%= qty[key] %> <%= pizza[key] %> Pizza (<%=size[key]%>) - $<%=total_price[key]%></li>
-
-        <% }; %>
-        <p> Total Price (tax included): $<%= (total_price[total_price.length-1] * 1.12).toFixed(2)%></p>
-
-      </ul>
-    </p>
-    <form class="form-inline mt-2 mt-md-0" method="POST" action="/status">
-      <input class="form-control mr-sm-2" type="text" placeholder="Enter phone number" name="phonenumber">
-      <a><button type= "submit" class="btn btn-dark confirm_order"> Confirm Order </button></a>
-    </form>
-  </div>
-</main>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
-</body>
+    </header>
+    <main role="main" class="order_container">
+      <div class="jumbotron">
+        <h1>Order Summary:</h1>
+        <p class="lead">
+          <ul>
+            <% for (let key in pizza) { %>
+            <li><%= qty[key] %> <%= pizza[key] %> Pizza (<%=size[key]%>) - $<%=total_price[key]%></li>
+            <% }; %>
+            <p> Total Price (tax included): $<%= (total_price[total_price.length-1] * 1.12).toFixed(2)%></p>
+          </ul>
+        </p>
+        <form class="form-inline mt-2 mt-md-0" method="POST" action="/status">
+          <input class="form-control mr-sm-2" type="text" placeholder="Enter phone number" name="phonenumber">
+          <a><button type= "submit" class="btn btn-dark confirm_order"> Confirm Order </button></a>
+        </form>
+      </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+  </body>
 </html>
