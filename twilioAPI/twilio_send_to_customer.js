@@ -23,7 +23,6 @@ const sendMsgToCus = function(phone_number){
      to: process.env.TO_PHONE_NUMBER
    })
   .then(message => console.log(message.sid));
-
 }
 
 module.exports = sendMsgToCus;

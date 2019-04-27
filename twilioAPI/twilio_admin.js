@@ -8,7 +8,6 @@ const accountSid = process.env.TWILIO_SID;
 const authToken = process.env.TWILIO_AUTH;
 const client = require('twilio')(accountSid, authToken);
 
-
 const sendMsgAdmin = function(phone_number){
   client.messages
   .create({
@@ -17,7 +16,6 @@ const sendMsgAdmin = function(phone_number){
      to: process.env.TO_ADMIN_PHONE_NUM
    })
   .then(message => console.log(message.sid));
-
 }
 
 module.exports = sendMsgAdmin;

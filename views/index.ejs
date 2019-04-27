@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <title>Home Page</title>
-
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
     <link rel="stylesheet" href="/vendor/border-box.css" type="text/css" />
     <link rel="stylesheet" href="/styles/index.css" type="text/css" />
@@ -12,238 +11,221 @@
     <script type="text/javascript" src="/scripts/app.js"></script>
     <script type="text/javascript" src="/scripts/addCart.js"></script>
   </head>
-
- <body>
+  <body>
     <header>
-  <div class="collapse bg-dark" id="navbarHeader">
-    <div class="container">
+      <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+        </div>
       </div>
     </div>
-  </div>
-  <div class="navbar">
-    <div class="container d-flex justify-content-between">
-         <strong><font size= "20px">Pizza Guys</font></strong>
+    <div class="navbar">
+      <div class="container d-flex justify-content-between">
+        <strong><font size= "20px">Pizza Guys</font></strong>
         <div>Address: 234 West 4th ave, Vancouver BC</div>
         <div>Phone Number: 778 123 4656</div>
-</header>
-<main role="main">
-  <div class="album py-5 bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/>
-              <img class="piz_pic" src="/images/pepperoni_pizza.jpg">
-            <div class="card-body">
-              <h4 class="pizza_name">Pepperoni Pizza</h4>
-              <p class="card-text"><i>Cheese, house cured pepperoni, and smoked tomato sauce.</i>
-              </p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group cart_container">
-                <form class="order_form" method="post" id="pepperoni">
-                  <input type="radio" name="sizes" value="small"> S - $10
-                  <input type="radio" name="sizes" value="medium"> M - $20
-                  <input type="radio" name="sizes" value="large"> L - $30
-
-                  <label>Qty</label>
-                    <select name="qty">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                  </select>
-                  <input type="button" class="btn btn-sm btn-outline-secondary cart_button" value="Add to cart"></input>
-                </form>
-
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-           <title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><img class="piz_pic" src="https://recipes.timesofindia.com/photo/53110049.cms">
-            <div class="card-body">
-               <h4 class="pizza_name">Cheese Pizza</h4>
-              <p class="card-text"><i>Mozzerella, fiore de latte, parmesean, fresh basil, and roasted garlic.</i></p>
-
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group cart_container">
-                <form class="order_form" method="post" id="cheese">
-                  <input type="radio" name="sizes" value="small"> S - $10
-                  <input type="radio" name="sizes" value="medium"> M - $20
-                  <input type="radio" name="sizes" value="large"> L - $30
-
-                    <label>Qty</label>
-                    <select name="qty">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                  </select>
-                  <input type="button" class="btn btn-sm btn-outline-secondary cart_button" value="Add to cart"></input>
-                </form>
-
+      </a>
+    </header>
+    <main role="main">
+      <div class="album py-5 bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><img class="piz_pic" src="/images/pepperoni_pizza.jpg">
+                <div class="card-body">
+                  <h4 class="pizza_name">Pepperoni Pizza</h4>
+                  <p class="card-text"><i>Cheese, house cured pepperoni, and smoked tomato sauce.</i>
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group cart_container">
+                      <form class="order_form" method="post" id="pepperoni">
+                        <input type="radio" name="sizes" value="small"> S - $10
+                        <input type="radio" name="sizes" value="medium"> M - $20
+                        <input type="radio" name="sizes" value="large"> L - $30
+                        <label>Qty</label>
+                        <select name="qty">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                        </select>
+                        <input type="button" class="btn btn-sm btn-outline-secondary cart_button" value="Add to cart"></input>
+                      </form>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><img class="piz_pic" src="/images/hawaiian_pizza2.jpg">
-            <div class="card-body">
-              <h4 class="pizza_name">Hawaiian Pizza</h4>
-              <p class="card-text"><i>Smoked ham, fresh pineapple, and spicy marina sauce.</i></p>
-               <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group cart_container">
-                <form class="order_form" method="post" id="hawaiian">
-                  <input type="radio" name="sizes" value="small"> S - $10
-                  <input type="radio" name="sizes" value="medium"> M - $20
-                  <input type="radio" name="sizes" value="large"> L - $30
-
-                    <label>Qty</label>
-                    <select name="qty">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                  </select>
-                  <input type="button" class="btn btn-sm btn-outline-secondary cart_button" value="Add to cart"></input>
-                </form>
-
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><img class="piz_pic" src="https://recipes.timesofindia.com/photo/53110049.cms">
+                <div class="card-body">
+                  <h4 class="pizza_name">Cheese Pizza</h4>
+                  <p class="card-text"><i>Mozzerella, fiore de latte, parmesean, fresh basil, and roasted garlic.</i></p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group cart_container">
+                      <form class="order_form" method="post" id="cheese">
+                        <input type="radio" name="sizes" value="small"> S - $10
+                        <input type="radio" name="sizes" value="medium"> M - $20
+                        <input type="radio" name="sizes" value="large"> L - $30
+                        <label>Qty</label>
+                        <select name="qty">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                        </select>
+                        <input type="button" class="btn btn-sm btn-outline-secondary cart_button" value="Add to cart"></input>
+                      </form>
+                    </div>
+                  </div>
                 </div>
-
               </div>
             </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><img class="piz_pic" src="https://s3.amazonaws.com/img.cookspiration.com/devices/134/2/en/veggie.pizza.with.three.cheese.ipad.jpg">
-            <div class="card-body">
-              <h4 class="pizza_name">Veggie Pizza</h4>
-              <p class="card-text"><i>Cream sage sauce, mushrooms, black olives, red peppers, broccoli, and mozzerella.</i></p>
-               <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group cart_container">
-
-              <div>
-
-                <form class="order_form" method="post" id="veggie">
-                  <input type="radio" name="sizes" value="small"> S - $10
-                  <input type="radio" name="sizes" value="medium"> M - $20
-                  <input type="radio" name="sizes" value="large"> L - $30
-
-                  <label>Qty</label>
-                  <select name="qty" class="size" id="qty">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                  </select>
-                  <input type="button" class="btn btn-sm btn-outline-secondary cart_button" value="Add to cart"></input>
-                </form>
-              </div>
-
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><img class="piz_pic" src="/images/hawaiian_pizza2.jpg">
+                <div class="card-body">
+                  <h4 class="pizza_name">Hawaiian Pizza</h4>
+                  <p class="card-text"><i>Smoked ham, fresh pineapple, and spicy marina sauce.</i></p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group cart_container">
+                      <form class="order_form" method="post" id="hawaiian">
+                        <input type="radio" name="sizes" value="small"> S - $10
+                        <input type="radio" name="sizes" value="medium"> M - $20
+                        <input type="radio" name="sizes" value="large"> L - $30
+                        <label>Qty</label>
+                        <select name="qty">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                        </select>
+                        <input type="button" class="btn btn-sm btn-outline-secondary cart_button" value="Add to cart"></input>
+                      </form>
+                    </div>
+                  </div>
                 </div>
-
               </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm" >
-            <title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><img class="piz_pic" src="/images/italian_pizza2.jpeg">
-            <div class="card-body">
-             <h4 class="pizza_name">Italian Pizza</h4>
-              <p class="card-text"><i>Italian sausage, fresh basil, burrata, and black olives.</i></p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group cart_container">
-                <form class="order_form" method="post" id="italian">
-                  <input type="radio" name="sizes" value="small"> S - $10
-                  <input type="radio" name="sizes" value="medium"> M - $20
-                  <input type="radio" name="sizes" value="large"> L - $30
-
-                    <label>Qty</label>
-                    <select name="qty" id="qty">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                  </select>
-                  <input type="button" class="btn btn-sm btn-outline-secondary cart_button" value="Add to cart"></input>
-                </form>
-
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><img class="piz_pic" src="https://s3.amazonaws.com/img.cookspiration.com/devices/134/2/en/veggie.pizza.with.three.cheese.ipad.jpg">
+                <div class="card-body">
+                  <h4 class="pizza_name">Veggie Pizza</h4>
+                  <p class="card-text"><i>Cream sage sauce, mushrooms, black olives, red peppers, broccoli, and mozzerella.</i></p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group cart_container">
+                      <div>
+                        <form class="order_form" method="post" id="veggie">
+                          <input type="radio" name="sizes" value="small"> S - $10
+                          <input type="radio" name="sizes" value="medium"> M - $20
+                          <input type="radio" name="sizes" value="large"> L - $30
+                          <label>Qty</label>
+                          <select name="qty" class="size" id="qty">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                          </select>
+                          <input type="button" class="btn btn-sm btn-outline-secondary cart_button" value="Add to cart"></input>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-
               </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><img class="piz_pic" src="/images/bbq_chicken2.jpg">
-            <div class="card-body">
-              <h4 class="pizza_name">BBQ Chicken Pizza</h4>
-              <p class="card-text"><i>House smoked chicken, sticky bbq sauce, roasted red peppers, and smoked gouda cheese.</i></p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group cart_container">
-                <form class="order_form" method="post" id="bbq">
-                  <input type="radio" name="sizes" value="small"> S - $10
-                  <input type="radio" name="sizes" value="medium"> M - $20
-                  <input type="radio" name="sizes" value="large"> L - $30
-
-                  <label>Qty</label>
-                  <select class="qty" name="qty">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                  </select>
-                 <input type="button" class="btn btn-sm btn-outline-secondary cart_button" value="Add to cart"></input>
-                </form>
-
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm" >
+                <title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><img class="piz_pic" src="/images/italian_pizza2.jpeg">
+                <div class="card-body">
+                  <h4 class="pizza_name">Italian Pizza</h4>
+                  <p class="card-text"><i>Italian sausage, fresh basil, burrata, and black olives.</i></p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group cart_container">
+                      <form class="order_form" method="post" id="italian">
+                        <input type="radio" name="sizes" value="small"> S - $10
+                        <input type="radio" name="sizes" value="medium"> M - $20
+                        <input type="radio" name="sizes" value="large"> L - $30
+                        <label>Qty</label>
+                        <select name="qty" id="qty">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                        </select>
+                        <input type="button" class="btn btn-sm btn-outline-secondary cart_button" value="Add to cart"></input>
+                      </form>
+                    </div>
+                  </div>
                 </div>
-
               </div>
             </div>
-          </div>
-        </div>
-
-        <div class="container" id="checkout_cart">
-          <h2><strong>My Cart</strong></h2>
-          <ul id="selectedItems"></ul>
-
-          <section class="cart_section"></section>
-
-          <section class="total_price"></section>
-          <form id="cart" method="POST" action="/checkout/">
-         <a><button type="submit" class="place_order_button"> Place order </button></a>
-         </form>
-
-        </div>
-
-
-</main>
-
-<footer class="text-muted">
-  <div class="container">
-    <p class="float-right">
-      <a href="#">Back to top</a>
-    </p>
-    <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-    <p>New to Bootstrap? <a href="https://getbootstrap.com/">Visit the homepage</a> or read our <a href="/docs/4.3/getting-started/introduction/">getting started guide</a>.</p>
-  </div>
-</footer>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
-    </body>
-</html>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><img class="piz_pic" src="/images/bbq_chicken2.jpg">
+                <div class="card-body">
+                  <h4 class="pizza_name">BBQ Chicken Pizza</h4>
+                  <p class="card-text"><i>House smoked chicken, sticky bbq sauce, roasted red peppers, and smoked gouda cheese.</i></p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group cart_container">
+                      <form class="order_form" method="post" id="bbq">
+                        <input type="radio" name="sizes" value="small"> S - $10
+                        <input type="radio" name="sizes" value="medium"> M - $20
+                        <input type="radio" name="sizes" value="large"> L - $30
+                        <label>Qty</label>
+                        <select class="qty" n"me="qty">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                        </select>
+                        <input type="button" class="btn btn-sm btn-outline-secondary cart_button" value="Add to cart"></input>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container" id="checkout_cart">
+              <h2><strong>My Cart</strong></h2>
+              <ul id="selectedItems">
+                <!-- <li class="order_list"></li> -->
+              </ul>
+              <section class="cart_section">
+              </section>
+              <section class="total_price">
+              </section>
+              <form id="cart" method="POST" action="/checkout/">
+                <a><button type="submit" class="place_order_button"> Place order </button></a>
+              </form>
+            </div>
+          </main>
+          <footer id="page_footer" class="text-muted">
+            <div class="container footer_container">
+              <div class="footer_attributes">
+                <p class="attribute">Contact Us</p>
+                <p class="attribute">FAQ</p>
+                <p class="attribute">Nutrition</p>
+                <p class="attribute">Gift Cards</p>
+                <p class="attribute">Privacy Policy</p>
+                <p class="attribute">Community</p>
+              </div>
+              <div class="footer_box">
+                <p class="footer_info"> &copy; 2019 Pizza Guys,</p>
+                <p class="footer_info"> 234 West 4th ave, Vancouver BC.</p>
+                <p class="footer_info"> www.pizzaguys.com</p>
+              </div>
+            </div>
+          </footer>
+          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+          <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+        </body>
+      </html>
