@@ -41,7 +41,7 @@ border-width: 1px;
 
 p.footer_info {
   font-size: 12px;
-  line-height: 0px;
+  line-height: 7px;
 }
 
 div.footer_box {
@@ -53,8 +53,10 @@ div.footer_box {
 p.attribute {
   color:gold;
   display: inline-block;
+  padding-top: 20px;
   margin: 10px 20px 5px 20px;
   font-weight: 900;
+  font-size: 18px;
 }
 
 div.footer_attributes {
@@ -63,12 +65,12 @@ div.footer_attributes {
 }
 
 input.cart_button {
-  width: 180px;
-  height: 50px;
+  width: 200px;
+  height: 55px;
   font-size: 20px;
   font-weight: 500;
   margin-top: 15px;
-  margin-left: 65px;
+  margin-left: 54px;
 }
 
 
