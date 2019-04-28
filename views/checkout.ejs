@@ -5,7 +5,6 @@
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
     <link rel="stylesheet" href="/vendor/border-box.css" type="text/css" />
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
-    <link rel="stylesheet" href="/styles/checkout.css" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
     <script type="text/javascript" src="/vendor/jquery-3.0.0.js"></script>
@@ -35,7 +34,7 @@
             <% for (let key in pizza) { %>
             <li><%= qty[key] %> <%= pizza[key] %> Pizza (<%=size[key]%>) - $<%=total_price[key]%></li>
             <% }; %>
-            <p> Total Price (tax included): $<%= (total_price[total_price.length-1] * 1.12).toFixed(2)%></p>
+            <p> <u><b>Total Price <i>(tax included)</i>: $<%= (total_price[total_price.length-1] * 1.12).toFixed(2)%></u></p>
           </ul>
         </p>
         <form class="form-inline mt-2 mt-md-0" method="POST" action="/status">

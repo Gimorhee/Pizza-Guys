@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
     <link rel="stylesheet" href="/vendor/border-box.css" type="text/css" />
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
-    <link rel="stylesheet" href="/styles/status.css" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
     <script type="text/javascript" src="/vendor/jquery-3.0.0.js"></script>
@@ -30,11 +29,14 @@
     <main role="main" class="status_container">
       <div class="jumbotron">
         <% if (data.time) { %>
-        <h1>Thank you for your order!</h1>
-        <h3>Your Order will be ready in <%= data.time %> minutes</h3>
+        <h1><strong>Your order has been confirmed!<br><br></strong></h1>
+        <h2><i>Your order will be ready for pickup in <%= data.time %> minutes.<br><br></i></h2>
+        <h5><i> Thank you for choosing Pizza Guys! Have a great day!<br></i></h5>
+        <h6> If you have any questions or concerns about your order please phone us at 778 123 4656.<br><br><br></h6>
+        <img src="/images/cutting-pizza.jpg">
         <%} else { %>
         <h1>Your order is pending...</h1>
-        <h2> We are still working on to get you the latest updates</h2>
+        <h2> Please wait here for confirmation from the restaurant!</h2>
         <% } %>
       </div>
     </main>
