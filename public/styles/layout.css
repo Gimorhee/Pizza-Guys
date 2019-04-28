@@ -1,16 +1,14 @@
-/*css styling for all pages*/
-
 .navbar {
- color: gold;
- background-color:  #800000;
- font-style: oblique;
- position: fixed;
- text-shadow: 4px 3px #006400;
- box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: gold;
+  background-color: #800000;
+  font-style: oblique;
+  position: fixed;
+  text-shadow: 4px 3px #006400;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#checkout_cart{
-  margin:15px;
+#checkout_cart {
+  margin: 15px;
   padding: 20px;
   border-style: solid;
   background-color: #E2E6E4;
@@ -26,18 +24,16 @@
   border-radius: 4px;
   border-color: black;
   margin: 10px;
-  background-color:#800000;
-  color:gold;
+  background-color: #800000;
+  color: gold;
   text-align: center;
   text-shadow: 2.5px 2.5px #000000;
-  box-shadow:         3px 3px 2px 2px #ccc;
-
+  box-shadow: 3px 3px 2px 2px #ccc;
 }
 
 .pizza_name {
   text-align: center;
   font-weight: bold;
-
 }
 
 .card-text {
@@ -78,20 +74,19 @@ p.footer_info {
 
 div.footer_box {
   padding-top: 25px;
-  color:gold;
+  color: gold;
   text-align: center;
-
 }
 
 p.attribute {
-  color:gold;
+  color: gold;
   display: inline-block;
   margin: 10px 20px 5px 20px;
   font-weight: 900;
 }
 
-p.attribute:hover{
-  color:gold;
+p.attribute:hover {
+  color: gold;
   display: inline-block;
   margin: 10px 20px 5px 20px;
   font-weight: 900;
@@ -117,7 +112,7 @@ input.cart_button {
 }
 
 .checkout_phone {
-  font-size: 16px
+  font-size: 16px;
 }
 
 .order_container {
@@ -143,6 +138,5 @@ input.cart_button {
 }
 
 .status_phone {
-  font-size: 16px
+  font-size: 16px;
 }
-
