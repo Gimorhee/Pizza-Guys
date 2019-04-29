@@ -22,6 +22,30 @@ border-width: 1px;
   text-align: center;
 }
 
+.place_order_button {
+  float: right;
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 4px;
+  border-color: black;
+  margin: 10px;
+  background-color:#800000;
+  color:gold;
+  text-align: center;
+}
+
+.place_remove_button {
+  float: right;
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 4px;
+  border-color: black;
+  margin: 10px;
+  background-color:#800000;
+  color: gold;
+  text-align: center;
+}
+
 .piz_pic {
   object-fit: cover;
   width: 348px;
@@ -76,5 +100,6 @@ input.cart_button {
   margin-top: 15px;
   margin-left: 65px;
 }
+
 
 

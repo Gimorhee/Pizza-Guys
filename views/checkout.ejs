@@ -33,7 +33,7 @@
         <p class="lead">
           <ul>
             <% for (let key in pizza) { %>
-            <li><%= qty[key] %> <%= pizza[key] %> Pizza (<%=size[key]%>) - $<%=total_price[key]%></li>
+            <li><%= qty[key] %> <%= pizza[key] %> Pizza (<%=size[key]%>) - $<%=price[key]%></li>
             <% }; %>
             <p> Total Price (tax included): $<%= (total_price[total_price.length-1] * 1.12).toFixed(2)%></p>
           </ul>

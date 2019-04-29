@@ -105,6 +105,7 @@ app.post("/checkout", (req, res) => {
     pizza: req.body.id,
     size: req.body.size,
     qty: req.body.qty,
+    price: req.body.price,
     total_price: req.body.total
   }
 
