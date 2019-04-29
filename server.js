@@ -63,7 +63,7 @@ app.use("/api/users", usersRoutes(knex));
 
 //creates route to admin
 app.get("/admin", (req, res) => {
-  knex.select('pizza_name', 'size', 'qty', 'total_price').from('data').then(data => res.render('admin', {data:data}))
+  knex.select('pizza_name', 'size', 'qty', 'price', 'total_price').from('data').then(data => res.render('admin', {data:data}))
 });
 
 app.post("/admin", (req, res) => {
@@ -112,7 +112,7 @@ app.post("/checkout", (req, res) => {
   knex('data').del().asCallback( (err) => {console.log(err)});
   knex('owner').del().asCallback( (err) => {console.log(err)});
   for (let i =0; i < req.body.id.length; i++) {
-    knex('data').insert({pizza_name: req.body.id[i], size: req.body.size[i], qty: Number(req.body.qty[i]), total_price: Number(req.body.total[i])}).asCallback( (err, result) => {
+    knex('data').insert({pizza_name: req.body.id[i], size: req.body.size[i], qty: Number(req.body.qty[i]), price: Number(req.body.price[i]), total_price: Number(req.body.total[i])}).asCallback( (err, result) => {
       console.log(err);
     })
   }
