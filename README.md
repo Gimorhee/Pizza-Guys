@@ -7,11 +7,11 @@ We chose to build our app for a "client" wanting a website for online ordering f
 ## Final Product
 _*Here are a couple screenshots of the finished website*_
 
-## _Users can write their own tweet!_
-![Alt text](https://github.com/kathleenpearce/tweeter/blob/master/README%20images/compose%20a%20tweet!.png)
+## PIZZA GUYS homepage! Detailed and attractive menu.
+![Alt text](https://github.com/Gimorhee/PizzaGuys---Food-Pick-up-Ordering/blob/master/public/images/pizza%20guys%20homepage.png)
 
-## _When the user presses "Tweet" their new tweet appears on Tweeter - tweets appear from newest at the top to oldest at the bottom!_
-![Alt text](https://github.com/kathleenpearce/tweeter/blob/master/README%20images/new%20tweet%20is%20there!.png)
+## The page user sees when they place and order and the restaurant admin confirms that order!
+![Alt text](https://github.com/Gimorhee/PizzaGuys---Food-Pick-up-Ordering/blob/master/public/images/order%20confirmation.png?raw=true)
 
 
 
