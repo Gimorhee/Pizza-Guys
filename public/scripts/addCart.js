@@ -16,7 +16,7 @@ $(() => {
       price += (30 * qty);
     }
 
-    $("#selectedItems").append(`<li> ${formId.charAt(0).toUpperCase()}${formId.slice(1)} Pizza - Size: ${size}, Qty: ${qty}, Price: ${price}</span>`);
+    $("#selectedItems").append(`<li> ${formId.charAt(0).toUpperCase()}${formId.slice(1)} Pizza - Size: ${size}, Qty: ${qty}, Price: ${price}`);
 
     total += price;
     console.log(formId);
